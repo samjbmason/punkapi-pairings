@@ -1,11 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import Inferno from 'inferno'
 import App from './App';
-
+import 'inferno-devtools'
 import 'tachyons';
 import './styles.css'
 
-ReactDOM.render(
+Inferno.render(
   <App />,
   document.getElementById('root')
 );
