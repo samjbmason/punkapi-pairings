@@ -1,0 +1,19 @@
+.bd-blue {
+  color: #00afdb;
+}
+
+.b--bd-blue {
+  border-color: #00afdb;
+}
+
+.bg-bd-blue {
+  background-color: #00afdb;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.disabled:disabled {
+  opacity: .5;
+}
