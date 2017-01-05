@@ -1,15 +1,7 @@
 import React from 'react'
-import { connect } from 'react-redux'
 
-import SearchForm from './SearchFormHOC'
-import Beers from './Beers'
+import StateContainer from './StateContainer'
 import Footer from './Footer'
-
-const mapStateToProps = function (state) {
-  return {
-    hasResults: state.beerData.hasResults || state.beerData.isLoading
-  }
-}
 
 const App = (props) => (
   <div className="mw8 ph2 ph5-ns center sans-serif">
@@ -20,16 +12,10 @@ const App = (props) => (
       Choose an ingredient & find a Brewdog beer that's perfect for it.
     </h2>
 
-    <SearchForm />
-
-    {!props.hasResults &&
-      <p>Sorry it looks like we didn't find any pairings, but you can't really go wrong with the ones below.</p>
-    }
-
-    <Beers />
+    <StateContainer />
 
     <Footer />
   </div>
 )
 
-export default connect(mapStateToProps)(App)
+export default App
