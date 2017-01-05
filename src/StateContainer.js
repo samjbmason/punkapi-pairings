@@ -82,7 +82,8 @@ class StateContainer extends Component {
   }
 
   fetchRandomIngredient () {
-    const ingredient = sample(exampleIngredients)
+    const randomIndex = Math.floor(Math.random() * exampleIngredients.length)
+    const ingredient = exampleIngredients[randomIndex]
     this.fetchBeerData(ingredient)
     this.setState({
       searchField: { value: ingredient },
