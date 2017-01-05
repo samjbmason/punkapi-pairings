@@ -1,4 +1,4 @@
-import React from 'react'
+import Inferno from 'inferno'
 import Beer from './Beer'
 
 const Beers = (props) => (
@@ -6,4 +6,5 @@ const Beers = (props) => (
     { props.data.map((p, i) => <Beer {...p} key={p.id} />) }
   </div>
 )
+
 export default Beers

@@ -1,5 +1,5 @@
-import React from 'react'
-import 'whatwg-fetch'
+import Inferno from 'inferno'
+import Component from 'inferno-component'
 
 import SearchField from './SearchField'
 import Beers from './Beers'
@@ -26,7 +26,7 @@ const initialState = {
   }
 }
 
-class StateContainer extends React.Component {
+class StateContainer extends Component {
   constructor(props) {
     super(props)
     this.state = initialState
@@ -100,7 +100,7 @@ class StateContainer extends React.Component {
           submitAndFetch={this.submitAndFetch}
         />
 
-        { (!this.state.beerData.hasResults || this.state.beerData.isLoading) &&
+        { (!this.state.beerData.hasResults && !this.state.beerData.isLoading) &&
           <p>Sorry it looks like we didn't find any pairings, but you can't really go wrong with the ones below.</p>
         }
 
