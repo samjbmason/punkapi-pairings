@@ -100,7 +100,7 @@ class StateContainer extends Component {
           submitAndFetch={this.submitAndFetch}
         />
 
-        { (!this.state.beerData.hasResults || this.state.beerData.isLoading) &&
+        { (!this.state.beerData.hasResults && !this.state.beerData.isLoading) &&
           <p>Sorry it looks like we didn't find any pairings, but you can't really go wrong with the ones below.</p>
         }
 
