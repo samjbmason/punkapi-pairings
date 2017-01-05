@@ -1,5 +1,6 @@
 import React from 'react'
-import sample from 'lodash/sample'
+import 'whatwg-fetch'
+
 import SearchField from './SearchField'
 import Beers from './Beers'
 
@@ -81,7 +82,8 @@ class StateContainer extends React.Component {
   }
 
   fetchRandomIngredient () {
-    const ingredient = sample(exampleIngredients)
+    const randomIndex = Math.floor(Math.random() * exampleIngredients.length)
+    const ingredient = exampleIngredients[randomIndex]
     this.fetchBeerData(ingredient)
     this.setState({
       searchField: { value: ingredient },
