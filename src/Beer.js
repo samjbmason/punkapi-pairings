@@ -1,4 +1,4 @@
-import React from 'react'
+import Inferno from 'inferno'
 
 const RecipeRecs = (props) => (
   <li className="mb2">{props.recipe}</li>

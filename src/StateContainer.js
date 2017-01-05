@@ -1,5 +1,6 @@
-import React from 'react'
-import sample from 'lodash/sample'
+import Inferno from 'inferno'
+import Component from 'inferno-component'
+
 import SearchField from './SearchField'
 import Beers from './Beers'
 
@@ -25,7 +26,7 @@ const initialState = {
   }
 }
 
-class StateContainer extends React.Component {
+class StateContainer extends Component {
   constructor(props) {
     super(props)
     this.state = initialState
