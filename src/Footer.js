@@ -5,7 +5,7 @@ const Footer = () => (
     <p className="f6">
       Made by <a className="link bd-blue" href="https://twitter.com/samjbmason">@samjbmason</a> using <a className="link bd-blue" href="https://punkapi.com">punkapi.com</a>.
     </p>
-    <p className="f6">Found an something wrong? <a className="link bd-blue" href="https://punkapi.com">Open an issue on GitHub</a></p>
+    <p className="f6">Found an something wrong? <a className="link bd-blue" href="https://github.com/samjbmason/punkapi-pairings/issues">Open an issue on GitHub</a></p>
   </footer>
 )
 
