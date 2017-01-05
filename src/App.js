@@ -12,8 +12,8 @@ const mapStateToProps = function (state) {
 }
 
 const App = (props) => (
-  <div className="mw8 ph5 center sans-serif">
-    <h1 className="f-headline fw9 baskerville mv0">
+  <div className="mw8 ph2 ph5-ns center sans-serif">
+    <h1 className="f-subheadline f-headline-ns fw9 baskerville mv0">
       Pairings
     </h1>
     <h2 className="f5 fw5 tracked ttu bd-blue mt1">

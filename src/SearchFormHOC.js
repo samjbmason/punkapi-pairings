@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import sample from 'lodash/sample'
-import { updateSearchValue, fetchBeerData, isSearchFieldEmpty } from './duck'
+import { updateSearchValue, fetchBeerData } from './duck'
 import SearchField from './SearchField'
 
 const exampleIngredients = [
