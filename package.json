@@ -8,20 +8,12 @@
   "dependencies": {
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "serve": "^2.1.2",
     "tachyons": "^4.6.1",
     "whatwg-fetch": "^2.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "now-start": "serve build/",
-    "deploy": "now",
-    "alias": "now alias"
+    "deploy": "up"
   },
-  "now": {
-    "alias": "pairings.punkapi.com"
-  }
+  "homepage": "."
 }

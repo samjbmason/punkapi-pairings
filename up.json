@@ -1,0 +1,11 @@
+{
+  "name": "punkapi-pairings",
+  "profile": "up_admin",
+  "type": "static",
+  "static": {
+    "dir": "build"
+  },
+  "hooks": {
+    "build": "npm run build"
+  }
+}
