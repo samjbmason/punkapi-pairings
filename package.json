@@ -13,7 +13,8 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "deploy": "up"
+    "deploy": "up",
+    "deploy:prod": "up deploy production"
   },
   "homepage": "."
 }
