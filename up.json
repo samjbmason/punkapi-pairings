@@ -8,7 +8,9 @@
   "hooks": {
     "build": "npm run build"
   },
-  "production": {
-    "domain": "pairings.punkapi.com"
+  "stages": {
+    "production": {
+      "domain": "pairings.punkapi.com"
+    }
   }
 }
